@@ -6,7 +6,7 @@ This is a scalable API in which you can get data about books, get information ab
   - Gin (library)
   - Viper (library)
   - Gomn (library)
-- PosgreSQL
+- PostgreSQL
 
 ## Why did I even start creating this project?
 I created this project to study the Gin library, but also during the creation I learned new things for myself, such as: _PostgreSQL_, _.env_, _viper_, _gin_, _gomn_. This is a simple project that helped me learn a lot.
