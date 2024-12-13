@@ -4,6 +4,7 @@ import (
 	"github.com/gin-gonic/gin"
 	"github.com/kreipikc/golang-gin-api/pkg/books"
 	"github.com/kreipikc/golang-gin-api/pkg/common/database"
+	"github.com/kreipikc/golang-gin-api/pkg/users"
 	"github.com/spf13/viper"
 )
 
@@ -18,6 +19,7 @@ func main() {
 	h := database.Init(dbUrl)
 
 	books.RegisterRouter(r, h)
+	users.RegisterRouter(r, h)
 
 	r.Run(port)
 }
