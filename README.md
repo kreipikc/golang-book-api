@@ -55,7 +55,8 @@ Also module `user`:
 
 ## Structure ptoject
 ```
-golang-book-api         
+golang-book-api     
+│   .dockerignore    
 │   .env                  # Main .env
 │   .example.env          # Example .env for github
 │   .gitignore            
