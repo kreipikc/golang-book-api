@@ -25,12 +25,12 @@ Moving on to the project
 cd <your_path>/golang-book-api
 ```
 
-Copying data from `.example.env` to `.env`and then change the necessary parameters in `.env` (we can do this in `.example.env` before copying - it doesn't matter)
+Copying data from `.example.env` to `.env` and then change the necessary parameters in `.env` (we can do this in `.example.env` before copying - it doesn't matter)
 ```bash
 cat .example.env > .env
 ```
 
-Next, we build the project using `docker-compose`
+Next, we build the project using `docker-compose` (if you need `bash` in the `app`, then go to the Dockerfile and uncomment)
 ```bash
 docker-compose up --build -d
 ```
