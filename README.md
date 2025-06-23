@@ -53,7 +53,7 @@ Also module `user`:
 - **GET** `/user/admin/get_all_info` - getting information about all users;
 - **POST** `/user/admin/change_role/:id` - change the role by id.
 
-## Structure ptoject
+## Structure project
 ```
 golang-book-api     
 │   .dockerignore    
