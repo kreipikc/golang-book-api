@@ -1,7 +1,7 @@
 # Dockerfile
 # Use Multi-Stage Build
 
-FROM golang:1.22-alpine AS builder
+FROM golang:1.24.1-alpine AS builder
 
 RUN apk add --no-cache git
 
@@ -14,7 +14,10 @@ COPY . .
 
 RUN CGO_ENABLED=0 GOOS=linux go build -o /app/bin/app ./cmd/main.go
 
-FROM alpine:latest
+FROM alpine:3.22
+
+# Uncomment if need bash
+# RUN apk add --no-cache bash
 
 WORKDIR /app
 
